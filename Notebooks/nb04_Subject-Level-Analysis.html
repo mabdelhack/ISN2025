@@ -9219,8 +9219,16 @@ Number of data points for ech confound: 208
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>________________________________________________________________________________
+[Memory] Calling nilearn.masking.compute_epi_mask...
+compute_epi_mask('/mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-15/ses-mri/func/sub-15_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz', verbose=0)
+________________________________________________compute_epi_mask - 14.8s, 0.2min
+________________________________________________________________________________
+[Memory] Calling nilearn.image.resampling.resample_img...
+resample_img(&lt;nibabel.nifti1.Nifti1Image object at 0x7fce63dd9b10&gt;, target_affine=None, target_shape=None, copy=False, interpolation='nearest')
+_____________________________________________________resample_img - 0.0s, 0.0min
+________________________________________________________________________________
 [Memory] Calling nilearn.maskers.nifti_masker._filter_and_mask...
-_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9db1f210&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9daa5790&gt;, { 'clean_kwargs': {},
+_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7fce63c00110&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7fce63dd9b10&gt;, { 'clean_kwargs': {},
   'detrend': False,
   'dtype': None,
   'high_pass': None,
@@ -9234,7 +9242,59 @@ _filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9db1f210&gt;, &l
   't_r': 2.0,
   'target_affine': None,
   'target_shape': None}, memory_level=1, memory=Memory(location=scratch/joblib), verbose=0, confounds=None, sample_mask=None, copy=True, dtype=None)
-_________________________________________________filter_and_mask - 10.1s, 0.2min
+__________________________________________________filter_and_mask - 7.5s, 0.1min
+________________________________________________________________________________
+[Memory] Calling nilearn.glm.first_level.first_level.run_glm...
+run_glm(array([[ 0.161099, ...,  0.288951],
+       ...,
+       [-2.095294, ...,  1.175988]], dtype=float32), 
+array([[0., ..., 1.],
+       ...,
+       [0., ..., 1.]]), noise_model='ar1', bins=100, n_jobs=2, random_state=None)
+_________________________________________________________run_glm - 13.3s, 0.2min
+________________________________________________________________________________
+[Memory] Calling nilearn.maskers.nifti_masker._filter_and_mask...
+_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7fce62861a90&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7fce63dd9b10&gt;, { 'clean_kwargs': {},
+  'detrend': False,
+  'dtype': None,
+  'high_pass': None,
+  'high_variance_confounds': False,
+  'low_pass': None,
+  'reports': True,
+  'runs': None,
+  'smoothing_fwhm': 6,
+  'standardize': False,
+  'standardize_confounds': True,
+  't_r': 2.0,
+  'target_affine': None,
+  'target_shape': None}, memory_level=1, memory=Memory(location=scratch/joblib), verbose=0, confounds=None, sample_mask=None, copy=True, dtype=None)
+__________________________________________________filter_and_mask - 6.8s, 0.1min
+________________________________________________________________________________
+[Memory] Calling nilearn.glm.first_level.first_level.run_glm...
+run_glm(array([[ 1.854098, ...,  0.076139],
+       ...,
+       [-1.06923 , ...,  1.101172]], dtype=float32), 
+array([[0., ..., 1.],
+       ...,
+       [0., ..., 1.]]), noise_model='ar1', bins=100, n_jobs=2, random_state=None)
+_________________________________________________________run_glm - 11.9s, 0.2min
+________________________________________________________________________________
+[Memory] Calling nilearn.maskers.nifti_masker._filter_and_mask...
+_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7fce63637210&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7fce63dd9b10&gt;, { 'clean_kwargs': {},
+  'detrend': False,
+  'dtype': None,
+  'high_pass': None,
+  'high_variance_confounds': False,
+  'low_pass': None,
+  'reports': True,
+  'runs': None,
+  'smoothing_fwhm': 6,
+  'standardize': False,
+  'standardize_confounds': True,
+  't_r': 2.0,
+  'target_affine': None,
+  'target_shape': None}, memory_level=1, memory=Memory(location=scratch/joblib), verbose=0, confounds=None, sample_mask=None, copy=True, dtype=None)
+__________________________________________________filter_and_mask - 7.6s, 0.1min
 ________________________________________________________________________________
 [Memory] Calling nilearn.glm.first_level.first_level.run_glm...
 run_glm(array([[ 1.384473, ...,  2.658701],
@@ -9246,7 +9306,7 @@ array([[0., ..., 1.],
 _________________________________________________________run_glm - 13.4s, 0.2min
 ________________________________________________________________________________
 [Memory] Calling nilearn.maskers.nifti_masker._filter_and_mask...
-_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9c14bcd0&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9daa5790&gt;, { 'clean_kwargs': {},
+_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7fce6280e090&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7fce63dd9b10&gt;, { 'clean_kwargs': {},
   'detrend': False,
   'dtype': None,
   'high_pass': None,
@@ -9260,7 +9320,7 @@ _filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9c14bcd0&gt;, &l
   't_r': 2.0,
   'target_affine': None,
   'target_shape': None}, memory_level=1, memory=Memory(location=scratch/joblib), verbose=0, confounds=None, sample_mask=None, copy=True, dtype=None)
-__________________________________________________filter_and_mask - 8.0s, 0.1min
+__________________________________________________filter_and_mask - 9.6s, 0.2min
 ________________________________________________________________________________
 [Memory] Calling nilearn.glm.first_level.first_level.run_glm...
 run_glm(array([[-0.348544, ...,  0.563037],
@@ -9269,10 +9329,10 @@ run_glm(array([[-0.348544, ...,  0.563037],
 array([[ 0.000000e+00, ...,  1.000000e+00],
        ...,
        [-5.619167e-04, ...,  1.000000e+00]]), noise_model='ar1', bins=100, n_jobs=2, random_state=None)
-_________________________________________________________run_glm - 12.7s, 0.2min
+_________________________________________________________run_glm - 13.4s, 0.2min
 ________________________________________________________________________________
 [Memory] Calling nilearn.maskers.nifti_masker._filter_and_mask...
-_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9dc798d0&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9daa5790&gt;, { 'clean_kwargs': {},
+_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7fce629ae350&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7fce63dd9b10&gt;, { 'clean_kwargs': {},
   'detrend': False,
   'dtype': None,
   'high_pass': None,
@@ -9286,7 +9346,7 @@ _filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9dc798d0&gt;, &l
   't_r': 2.0,
   'target_affine': None,
   'target_shape': None}, memory_level=1, memory=Memory(location=scratch/joblib), verbose=0, confounds=None, sample_mask=None, copy=True, dtype=None)
-__________________________________________________filter_and_mask - 6.7s, 0.1min
+__________________________________________________filter_and_mask - 7.9s, 0.1min
 ________________________________________________________________________________
 [Memory] Calling nilearn.glm.first_level.first_level.run_glm...
 run_glm(array([[-0.068235, ...,  0.420058],
@@ -9295,10 +9355,10 @@ run_glm(array([[-0.068235, ...,  0.420058],
 array([[0., ..., 1.],
        ...,
        [0., ..., 1.]]), noise_model='ar1', bins=100, n_jobs=2, random_state=None)
-_________________________________________________________run_glm - 13.2s, 0.2min
+_________________________________________________________run_glm - 12.6s, 0.2min
 ________________________________________________________________________________
 [Memory] Calling nilearn.maskers.nifti_masker._filter_and_mask...
-_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9d3a3550&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9daa5790&gt;, { 'clean_kwargs': {},
+_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7fce630c2310&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7fce63dd9b10&gt;, { 'clean_kwargs': {},
   'detrend': False,
   'dtype': None,
   'high_pass': None,
@@ -9312,7 +9372,7 @@ _filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9d3a3550&gt;, &l
   't_r': 2.0,
   'target_affine': None,
   'target_shape': None}, memory_level=1, memory=Memory(location=scratch/joblib), verbose=0, confounds=None, sample_mask=None, copy=True, dtype=None)
-__________________________________________________filter_and_mask - 6.5s, 0.1min
+__________________________________________________filter_and_mask - 7.3s, 0.1min
 ________________________________________________________________________________
 [Memory] Calling nilearn.glm.first_level.first_level.run_glm...
 run_glm(array([[  3.323317, ...,   4.395175],
@@ -9321,10 +9381,10 @@ run_glm(array([[  3.323317, ...,   4.395175],
 array([[ 0.      , ...,  1.      ],
        ...,
        [-0.003708, ...,  1.      ]]), noise_model='ar1', bins=100, n_jobs=2, random_state=None)
-_________________________________________________________run_glm - 12.5s, 0.2min
+_________________________________________________________run_glm - 12.7s, 0.2min
 ________________________________________________________________________________
 [Memory] Calling nilearn.maskers.nifti_masker._filter_and_mask...
-_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d92748550&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9daa5790&gt;, { 'clean_kwargs': {},
+_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7fce59f6d150&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7fce63dd9b10&gt;, { 'clean_kwargs': {},
   'detrend': False,
   'dtype': None,
   'high_pass': None,
@@ -9338,7 +9398,7 @@ _filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d92748550&gt;, &l
   't_r': 2.0,
   'target_affine': None,
   'target_shape': None}, memory_level=1, memory=Memory(location=scratch/joblib), verbose=0, confounds=None, sample_mask=None, copy=True, dtype=None)
-__________________________________________________filter_and_mask - 6.7s, 0.1min
+__________________________________________________filter_and_mask - 7.2s, 0.1min
 ________________________________________________________________________________
 [Memory] Calling nilearn.glm.first_level.first_level.run_glm...
 run_glm(array([[-0.960016, ...,  1.242483],
@@ -9347,10 +9407,10 @@ run_glm(array([[-0.960016, ...,  1.242483],
 array([[0., ..., 1.],
        ...,
        [0., ..., 1.]]), noise_model='ar1', bins=100, n_jobs=2, random_state=None)
-_________________________________________________________run_glm - 15.7s, 0.3min
+_________________________________________________________run_glm - 11.4s, 0.2min
 ________________________________________________________________________________
 [Memory] Calling nilearn.maskers.nifti_masker._filter_and_mask...
-_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9c14b350&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9daa5790&gt;, { 'clean_kwargs': {},
+_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7fce61c71e50&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7fce63dd9b10&gt;, { 'clean_kwargs': {},
   'detrend': False,
   'dtype': None,
   'high_pass': None,
@@ -9364,7 +9424,7 @@ _filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9c14b350&gt;, &l
   't_r': 2.0,
   'target_affine': None,
   'target_shape': None}, memory_level=1, memory=Memory(location=scratch/joblib), verbose=0, confounds=None, sample_mask=None, copy=True, dtype=None)
-__________________________________________________filter_and_mask - 7.6s, 0.1min
+__________________________________________________filter_and_mask - 6.9s, 0.1min
 ________________________________________________________________________________
 [Memory] Calling nilearn.glm.first_level.first_level.run_glm...
 run_glm(array([[-0.678939, ...,  0.671422],
@@ -9373,10 +9433,10 @@ run_glm(array([[-0.678939, ...,  0.671422],
 array([[ 0.000000e+00, ...,  1.000000e+00],
        ...,
        [-3.501819e-04, ...,  1.000000e+00]]), noise_model='ar1', bins=100, n_jobs=2, random_state=None)
-_________________________________________________________run_glm - 13.2s, 0.2min
+_________________________________________________________run_glm - 12.6s, 0.2min
 ________________________________________________________________________________
 [Memory] Calling nilearn.maskers.nifti_masker._filter_and_mask...
-_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9d3b3c10&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9daa5790&gt;, { 'clean_kwargs': {},
+_filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7fce63a32bd0&gt;, &lt;nibabel.nifti1.Nifti1Image object at 0x7fce63dd9b10&gt;, { 'clean_kwargs': {},
   'detrend': False,
   'dtype': None,
   'high_pass': None,
@@ -9390,7 +9450,7 @@ _filter_and_mask(&lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9d3b3c10&gt;, &l
   't_r': 2.0,
   'target_affine': None,
   'target_shape': None}, memory_level=1, memory=Memory(location=scratch/joblib), verbose=0, confounds=None, sample_mask=None, copy=True, dtype=None)
-__________________________________________________filter_and_mask - 7.6s, 0.1min
+__________________________________________________filter_and_mask - 8.2s, 0.1min
 ________________________________________________________________________________
 [Memory] Calling nilearn.glm.first_level.first_level.run_glm...
 run_glm(array([[-1.064301, ...,  2.218497],
@@ -9399,7 +9459,7 @@ run_glm(array([[-1.064301, ...,  2.218497],
 array([[0., ..., 1.],
        ...,
        [0., ..., 1.]]), noise_model='ar1', bins=100, n_jobs=2, random_state=None)
-_________________________________________________________run_glm - 15.8s, 0.3min
+_________________________________________________________run_glm - 13.0s, 0.2min
 </pre>
 </div>
 </div>
@@ -10540,7 +10600,7 @@ _________________________________________________________run_glm - 15.8s, 0.3min
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>________________________________________________________________________________
 [Memory] Calling nilearn.masking.unmask...
-unmask(array([1.981216, ..., 0.935692]), &lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9daa5790&gt;)
+unmask(array([1.981216, ..., 0.935692]), &lt;nibabel.nifti1.Nifti1Image object at 0x7fce63dd9b10&gt;)
 ___________________________________________________________unmask - 0.2s, 0.0min
 </pre>
 </div>
@@ -11211,7 +11271,7 @@ x4CCE8vMn5GjFIa1mARjlwAAAA==
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>________________________________________________________________________________
 [Memory] Calling nilearn.masking.unmask...
-unmask(array([-1.095267, ...,  0.856316]), &lt;nibabel.nifti1.Nifti1Image object at 0x7f5d9daa5790&gt;)
+unmask(array([-1.095267, ...,  0.856316]), &lt;nibabel.nifti1.Nifti1Image object at 0x7fce63dd9b10&gt;)
 ___________________________________________________________unmask - 0.2s, 0.0min
 </pre>
 </div>
@@ -11248,12 +11308,12 @@ ___________________________________________________________unmask - 0.2s, 0.0min
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">model_name</span> <span class="o">=</span> <span class="s1">'first-level'</span>
@@ -11267,8 +11327,8 @@ ___________________________________________________________unmask - 0.2s, 0.0min
 
 <span class="n">TR</span> <span class="o">=</span> <span class="n">layout</span><span class="o">.</span><span class="n">get_tr</span><span class="p">()</span> <span class="c1"># Assume same for all subjects </span>
 
-<span class="k">for</span> <span class="n">sub</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">):</span> <span class="c1"># comment this line and uncomment below if want to run all</span>
-<span class="c1">#for sub in range (1,17):</span>
+<span class="c1">#for sub in range (1,0): # comment this line and uncomment below if want to run all</span>
+<span class="k">for</span> <span class="n">sub</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">17</span><span class="p">):</span>
     <span class="n">sID</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sub</span><span class="si">:</span><span class="s2">02d</span><span class="si">}</span><span class="s2">"</span>
 
     <span class="c1"># ======================================================================</span>
@@ -11385,19 +11445,19 @@ ___________________________________________________________unmask - 0.2s, 0.0min
         <span class="c1"># Create contrast for Faces &gt; Scrambled</span>
         <span class="c1"># ------------------------------------------------------------------</span>
         <span class="c1"># Calculate the number of "Faces" and "Scrambled" conditions</span>
-        <span class="n">num_faces</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">col_name</span> <span class="ow">in</span> <span class="n">column_names</span> <span class="k">if</span> <span class="s2">"F"</span> <span class="ow">in</span> <span class="n">col_name</span><span class="p">)</span>
-        <span class="n">num_scrambled</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">col_name</span> <span class="ow">in</span> <span class="n">column_names</span> <span class="k">if</span> <span class="s2">"S"</span> <span class="ow">in</span> <span class="n">col_name</span><span class="p">)</span>
-                            
+        <span class="n">num_faces</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">col_name</span> <span class="ow">in</span> <span class="n">column_names</span> <span class="k">if</span> <span class="n">col_name</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s1">'FF'</span><span class="p">,</span> <span class="s1">'UF'</span><span class="p">)))</span>
+        <span class="n">num_scrambled</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">col_name</span> <span class="ow">in</span> <span class="n">column_names</span> <span class="k">if</span> <span class="n">col_name</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'SF'</span><span class="p">))</span>
+    
         <span class="c1"># Initialize the contrast vector with zeros</span>
         <span class="n">contrast_vector</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n_columns</span><span class="p">)</span>
-        
+    
         <span class="c1"># Assign weights to the contrast vector</span>
         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">col_name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">column_names</span><span class="p">):</span>
-            <span class="k">if</span> <span class="s2">"F"</span> <span class="ow">in</span> <span class="n">col_name</span><span class="p">:</span>
-                <span class="n">contrast_vector</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">num_faces</span> <span class="o">/</span><span class="n">nruns</span> <span class="c1"># weigh the faces conditions</span>
-            <span class="k">elif</span> <span class="s2">"S"</span> <span class="ow">in</span> <span class="n">col_name</span><span class="p">:</span>
-                <span class="n">contrast_vector</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">/</span> <span class="n">num_scrambled</span><span class="o">/</span><span class="n">nruns</span>  <span class="c1"># weigh the scrambled conditions</span>
-        
+            <span class="k">if</span> <span class="n">col_name</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s1">'FF'</span><span class="p">,</span> <span class="s1">'UF'</span><span class="p">)):</span>
+                <span class="n">contrast_vector</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="n">num_faces</span> <span class="o">*</span> <span class="n">nruns</span><span class="p">)</span> <span class="c1"># weigh the faces conditions</span>
+            <span class="k">elif</span> <span class="n">col_name</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'SF'</span><span class="p">):</span>
+                <span class="n">contrast_vector</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="n">num_scrambled</span> <span class="o">*</span> <span class="n">nruns</span><span class="p">)</span>  <span class="c1"># weigh the scrambled conditions</span>
+         
         <span class="n">contrasts</span><span class="p">[</span><span class="s1">'FacesScrambled'</span><span class="p">]</span> <span class="o">=</span> <span class="n">contrast_vector</span>
         
         <span class="c1"># ------------------------------------------------------------------</span>
@@ -11430,6 +11490,162 @@ ___________________________________________________________unmask - 0.2s, 0.0min
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Running first-level analysis for subject 01
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-01/ses-mri/func/sub-01_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-01/ses-mri/func/sub-01_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-01/ses-mri/func/sub-01_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniSF' 'IniFF' 'ImmFF' 'ImmSF' 'DelSF' 'DelFF' 'IniUF' 'ImmUF' 'DelUF']
+Running first-level analysis for subject 02
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-02/ses-mri/func/sub-02_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-02/ses-mri/func/sub-02_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-02/ses-mri/func/sub-02_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniFF' 'ImmFF' 'IniSF' 'ImmSF' 'IniUF' 'DelFF' 'DelUF' 'ImmUF' 'DelSF']
+Running first-level analysis for subject 03
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-03/ses-mri/func/sub-03_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-03/ses-mri/func/sub-03_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-03/ses-mri/func/sub-03_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniUF' 'ImmUF' 'IniFF' 'IniSF' 'DelFF' 'ImmFF' 'DelSF' 'ImmSF' 'DelUF']
+Running first-level analysis for subject 04
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-04/ses-mri/func/sub-04_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-04/ses-mri/func/sub-04_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-04/ses-mri/func/sub-04_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniSF' 'ImmSF' 'IniFF' 'IniUF' 'ImmUF' 'DelFF' 'DelSF' 'ImmFF' 'DelUF']
+Running first-level analysis for subject 05
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-05/ses-mri/func/sub-05_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-05/ses-mri/func/sub-05_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-05/ses-mri/func/sub-05_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniFF' 'IniSF' 'ImmSF' 'IniUF' 'ImmUF' 'ImmFF' 'DelFF' 'DelUF' 'DelSF']
+Running first-level analysis for subject 06
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-06/ses-mri/func/sub-06_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-06/ses-mri/func/sub-06_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-06/ses-mri/func/sub-06_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniUF' 'IniFF' 'ImmFF' 'ImmUF' 'DelUF' 'IniSF' 'ImmSF' 'DelFF' 'DelSF']
+Running first-level analysis for subject 07
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-07/ses-mri/func/sub-07_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-07/ses-mri/func/sub-07_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-07/ses-mri/func/sub-07_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniSF' 'ImmSF' 'IniFF' 'IniUF' 'ImmUF' 'DelFF' 'DelSF' 'ImmFF' 'DelUF']
+Running first-level analysis for subject 08
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-08/ses-mri/func/sub-08_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-08/ses-mri/func/sub-08_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-08/ses-mri/func/sub-08_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniSF' 'ImmSF' 'IniUF' 'ImmUF' 'DelSF' 'IniFF' 'ImmFF' 'DelUF' 'DelFF']
+Running first-level analysis for subject 09
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-09/ses-mri/func/sub-09_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-09/ses-mri/func/sub-09_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-09/ses-mri/func/sub-09_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniSF' 'ImmSF' 'IniUF' 'IniFF' 'ImmFF' 'ImmUF' 'DelUF' 'DelFF' 'DelSF']
+Running first-level analysis for subject 10
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-10/ses-mri/func/sub-10_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-10/ses-mri/func/sub-10_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-10/ses-mri/func/sub-10_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniUF' 'IniFF' 'ImmFF' 'IniSF' 'ImmSF' 'DelUF' 'ImmUF' 'DelSF' 'DelFF']
+Running first-level analysis for subject 11
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-11/ses-mri/func/sub-11_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-11/ses-mri/func/sub-11_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-11/ses-mri/func/sub-11_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniFF' 'IniSF' 'IniUF' 'DelFF' 'ImmUF' 'ImmFF' 'DelSF' 'ImmSF' 'DelUF']
+Running first-level analysis for subject 12
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-12/ses-mri/func/sub-12_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-12/ses-mri/func/sub-12_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-12/ses-mri/func/sub-12_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniUF' 'IniFF' 'ImmFF' 'ImmUF' 'DelUF' 'IniSF' 'ImmSF' 'DelSF' 'DelFF']
+Running first-level analysis for subject 13
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-13/ses-mri/func/sub-13_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-13/ses-mri/func/sub-13_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-13/ses-mri/func/sub-13_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniUF' 'IniSF' 'ImmSF' 'IniFF' 'ImmFF' 'DelUF' 'DelFF' 'DelSF' 'ImmUF']
+Running first-level analysis for subject 14
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-14/ses-mri/func/sub-14_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-14/ses-mri/func/sub-14_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-14/ses-mri/func/sub-14_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniUF' 'ImmUF' 'IniFF' 'ImmFF' 'IniSF' 'ImmSF' 'DelUF' 'DelSF' 'DelFF']
+Running first-level analysis for subject 15
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-15/ses-mri/func/sub-15_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-15/ses-mri/func/sub-15_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-15/ses-mri/func/sub-15_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniSF' 'IniUF' 'ImmUF' 'ImmSF' 'DelSF' 'IniFF' 'ImmFF' 'DelFF' 'DelUF']
+Running first-level analysis for subject 16
+Found 9 preprocessed functional files,
+  first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-16/ses-mri/func/sub-16_ses-mri_task-facerecognition_run-01_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+Found 9 event files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/sub-16/ses-mri/func/sub-16_ses-mri_task-facerecognition_run-01_events.tsv
+Found 9 confounds files,
+   first = /mnt/c/Users/rh01/PythonNeuroimagingCourse/FaceRecognition/data/derivatives/fmriprep/sub-16/ses-mri/func/sub-16_ses-mri_task-facerecognition_run-01_desc-confounds_timeseries.tsv
+Creating contrasts for each of these conditions:
+['IniSF' 'IniFF' 'ImmFF' 'IniUF' 'ImmUF' 'DelSF' 'DelFF' 'DelUF' 'ImmSF']
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -11446,7 +11662,7 @@ ___________________________________________________________unmask - 0.2s, 0.0min
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ======================================================================</span>
